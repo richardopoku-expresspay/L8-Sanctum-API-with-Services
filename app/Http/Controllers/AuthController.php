@@ -23,6 +23,6 @@ class AuthController extends Controller
 
         Log::debug('Response from Login', ['response' => $result]);
 
-        return $result;
+        return response()->json($result);
     }
 }

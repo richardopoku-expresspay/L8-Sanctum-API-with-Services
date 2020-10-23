@@ -10,4 +10,9 @@ class UserRepository implements UserContract
     {
         return User::where('email', $email)->first();
     }
+
+    public function all()
+    {
+        return User::all();
+    }
 }

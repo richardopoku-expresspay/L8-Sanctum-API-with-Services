@@ -55,4 +55,15 @@ class AuthService
             ],
         ];
     }
+
+    public function getUsers(): array
+    {
+        return [
+            'error_code' => 0,
+            'message' => 'Users found.',
+            'data' => [
+                'users' => $this->user->all(),
+            ],
+        ];
+    }
 }
